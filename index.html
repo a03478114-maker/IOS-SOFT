@@ -2235,6 +2235,177 @@ footer{
             38px 20px 22px;
     }
 }
+
+/* ===== IOS SOFT RESPONSIVE FIX ===== */
+.phone-number{
+    direction:ltr !important;
+    unicode-bidi:isolate;
+    white-space:nowrap;
+    text-align:right;
+    font-variant-numeric:tabular-nums;
+}
+html,body{max-width:100%;overflow-x:hidden;}
+img{max-width:100%;}
+
+@media (max-width:900px){
+    section{padding-left:20px;padding-right:20px;}
+    .navbar{width:calc(100% - 24px);}
+    .hero{min-height:820px;}
+    .hero-content{width:min(620px,100%);padding:0 12px;}
+    .hero-title{font-size:clamp(58px,12vw,100px);letter-spacing:-5px;}
+    .logo-space{width:min(720px,94vw);height:min(720px,94vw);}
+    .orbit-1{width:min(410px,58vw);height:min(410px,58vw);}
+    .orbit-2{width:min(560px,78vw);height:min(560px,78vw);}
+    .orbit-3{width:min(690px,94vw);height:min(690px,94vw);}
+    .tool-logo{width:82px;height:82px;}
+    .center-core{width:150px;height:150px;}
+}
+
+@media (max-width:600px){
+    .navbar{
+        top:7px;width:calc(100% - 14px);min-height:54px;
+        padding:8px 10px;border-radius:16px;
+    }
+    .brand{gap:7px;font-size:12px;min-width:0;}
+    .brand-icon{width:35px;height:35px;border-radius:10px;font-size:12px;flex-shrink:0;}
+    .nav-button{padding:9px 11px;border-radius:10px;font-size:10px;white-space:nowrap;}
+
+    .hero{
+        min-height:780px;
+        padding:92px 14px 55px;
+        align-items:flex-start;
+    }
+    .hero-content{
+        width:100%;max-width:430px;margin-top:38px;padding:0;z-index:30;
+    }
+    .eyebrow{padding:7px 12px;margin-bottom:20px;font-size:10px;}
+    .hero-title{
+        font-size:clamp(54px,17vw,72px);
+        line-height:.86;letter-spacing:-4px;margin-bottom:20px;
+    }
+    .hero-description{max-width:330px;font-size:12px;line-height:1.85;}
+    .hero-buttons{width:100%;margin-top:25px;gap:9px;}
+    .btn{width:min(100%,250px);min-width:0;padding:13px 18px;border-radius:13px;font-size:12px;}
+
+    .logo-space{
+        width:360px;height:360px;top:57%;left:50%;
+        transform:translate(-50%,-50%);opacity:.92;
+    }
+    .orbit-1{width:205px;height:205px;}
+    .orbit-2{width:285px;height:285px;}
+    .orbit-3{width:350px;height:350px;}
+    .center-core{width:105px;height:105px;}
+    .center-core::before{inset:-13px;}
+    .center-core::after{inset:-25px;}
+    .core-title{font-size:16px;}
+    .core-small{margin-top:8px;font-size:6px;letter-spacing:2px;}
+    .tool-logo{width:58px;height:58px;border-radius:15px;}
+    .tool-logo img{width:86%;height:86%;border-radius:10px;}
+    .logo-cdma{top:2%;left:42%;}
+    .logo-qcdma{top:27%;left:0;}
+    .logo-unlock{top:67%;left:4%;}
+    .logo-tsm{top:69%;right:4%;}
+    .logo-mobiledit{top:27%;right:0;}
+    .logo-oxygen{bottom:2%;left:42%;}
+    .logo-name{display:none;}
+
+    section{padding:75px 14px;}
+    .section-head{margin-bottom:38px;}
+    .kicker{font-size:9px;letter-spacing:3px;}
+    .section-title{font-size:clamp(30px,9vw,42px);line-height:1.05;letter-spacing:-1.5px;}
+    .section-text{max-width:340px;font-size:12px;line-height:1.85;}
+
+    .tools-grid,.why-grid,.contact-grid{grid-template-columns:1fr;gap:13px;}
+    .tool-card{min-height:0;padding:20px;border-radius:20px;}
+    .tool-card:hover{transform:none;scale:none;}
+    .card-logo{width:86px;height:86px;margin-bottom:18px;border-radius:18px;}
+    .tool-card h3{font-size:18px;margin-bottom:8px;}
+    .tool-card p{font-size:12px;line-height:1.75;margin-bottom:16px;}
+    .card-footer{gap:10px;}
+    .details{font-size:11px;}
+
+    .shares-box{padding:48px 16px;border-radius:25px;}
+    .shares-content h2{font-size:clamp(30px,9vw,42px);line-height:1.1;}
+    .shares-content p{font-size:12px;line-height:1.85;}
+    .hours{gap:8px;margin:25px 0;}
+    .hour{padding:10px 14px;border-radius:11px;font-size:11px;}
+    .shares-orbit{width:330px;height:330px;}
+
+    .google-service{min-height:0;padding:45px 16px;border-radius:25px;}
+    .google-glow{width:330px;height:330px;}
+    .google-icon{width:82px;height:82px;margin-bottom:20px;border-radius:22px;font-size:40px;}
+    .google-content h2{font-size:clamp(30px,9vw,42px);line-height:1.1;}
+    .google-content p{font-size:12px;line-height:1.85;}
+    .service-features{gap:7px;margin:22px 0;}
+    .service-feature{padding:8px 11px;font-size:10px;}
+
+    .why-card{padding:21px;border-radius:18px;}
+    .why-icon{font-size:24px;margin-bottom:14px;}
+    .why-card h3{font-size:16px;}
+    .why-card p{font-size:11px;line-height:1.75;}
+
+    .contact-card{padding:18px;gap:13px;border-radius:18px;}
+    .contact-card:hover{transform:none;}
+    .contact-icon{width:52px;height:52px;border-radius:15px;font-size:21px;}
+    .contact-card h3{font-size:15px;margin:4px 0;}
+    .contact-card p{font-size:10px;}
+    .contact-card small{font-size:8px;letter-spacing:1.5px;}
+
+    .cta{padding-bottom:100px;}
+    .cta h2{font-size:clamp(36px,11vw,55px);line-height:1;letter-spacing:-2px;}
+    .cta p{font-size:12px;}
+    footer{padding:24px 14px;}
+    .footer-inner{gap:8px;text-align:center;}
+
+    .subscription-modal{padding:12px;}
+    .subscription-box{
+        width:100%;max-height:calc(100dvh - 24px);overflow:auto;
+        padding:34px 16px 18px;border-radius:22px;
+    }
+    .subscription-box h3{font-size:23px;}
+    .subscription-box p{font-size:12px;line-height:1.8;}
+    .selected-tool{
+        max-width:100%;padding:10px 15px;margin-bottom:20px;
+        font-size:13px;white-space:normal;
+    }
+    .subscription-close{top:10px;right:10px;}
+
+    .btn:hover,.tool-logo:hover,.subscribe-confirm:hover,.subscribe-cancel:hover{
+        transform:none;
+    }
+    .cursor-glow{display:none;}
+}
+
+@media (max-width:380px){
+    .hero{min-height:750px;}
+    .hero-title{font-size:52px;}
+    .logo-space{width:320px;height:320px;top:58%;}
+    .orbit-1{width:185px;height:185px;}
+    .orbit-2{width:255px;height:255px;}
+    .orbit-3{width:310px;height:310px;}
+    .tool-logo{width:52px;height:52px;}
+    .center-core{width:96px;height:96px;}
+    .nav-button{padding:8px 9px;font-size:9px;}
+}
+
+
+.shares-tools-note{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    margin-top:18px;
+    padding:9px 14px;
+    border:1px solid rgba(110,120,255,.16);
+    border-radius:999px;
+    background:rgba(100,110,255,.06);
+    color:#9b9baf;
+    font-size:11px;
+}
+.shares-tools-note strong{
+    color:#fff;
+}
+
 </style>
 </head>
 
@@ -2786,35 +2957,29 @@ footer{
             </div>
 
             <h2>
-                تحتاج الأداة لساعات فقط؟
+                Shares
             </h2>
 
             <p>
-                لا تحتاج دائماً إلى اشتراك كامل.
-                اختر مدة الوصول المناسبة لاحتياجك.
+                خدمة Share متوفرة حالياً لأداتي
+                <strong>UnlockTool</strong> و
+                <strong>TSM Tool</strong>
+                فقط، لمدة 6 ساعات.
             </p>
+
+            <div class="shares-tools-note">
+                <strong>UnlockTool</strong>
+                <span>+</span>
+                <strong>TSM Tool</strong>
+                <span>·</span>
+                6 ساعات
+            </div>
 
 
             <div class="hours">
 
                 <div class="hour">
-                    1 ساعة
-                </div>
-
-                <div class="hour">
-                    3 ساعات
-                </div>
-
-                <div class="hour">
                     6 ساعات
-                </div>
-
-                <div class="hour">
-                    12 ساعة
-                </div>
-
-                <div class="hour">
-                    24 ساعة
                 </div>
 
             </div>
@@ -2826,7 +2991,7 @@ footer{
                 rel="noopener"
                 class="btn btn-primary">
 
-                طلب Share
+                طلب Share لمدة 6 ساعات
 
             </a>
 
@@ -3099,9 +3264,7 @@ footer{
                     WHATSAPP
                 </small>
 
-                <h3>
-                    +967 785 561 104
-                </h3>
+                <h3 class="phone-number" dir="ltr" lang="en">+967 785 561 104</h3>
 
                 <p>
                     تواصل معنا عبر WhatsApp
@@ -3305,7 +3468,9 @@ footer{
 const particles =
     document.getElementById("particles");
 
-for(let i=0;i<110;i++){
+const particleCount = window.matchMedia("(max-width: 600px)").matches ? 55 : 110;
+
+for(let i=0;i<particleCount;i++){
 
     const p =
         document.createElement("span");
